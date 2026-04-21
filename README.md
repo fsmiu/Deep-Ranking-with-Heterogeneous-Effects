@@ -147,7 +147,7 @@ Generates trajectories plots and radar charts
 
 ## Citation
 
-If you use this code, please cite the corresponding paper:
+If you use this code or the collected dataset, please cite the corresponding paper:
 
 ```bibtex
 @article{luo2026deep,
