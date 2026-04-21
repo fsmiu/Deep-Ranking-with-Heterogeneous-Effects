@@ -1,0 +1,21 @@
+{
+    "covariate_processed": [
+        "Ground type=Grass",
+        "Ground type=Indoor hard",
+        "Ground type=Outdoor hard",
+        "Ground type=Red clay",
+        "ATP_level=ATP 250",
+        "ATP_level=ATP 500",
+        "ATP_level=ATP Finals",
+        "ATP_level=Grand Slam",
+        "ATP_level=Masters 1000",
+        "Match round=Final",
+        "Match round=Qualifying",
+        "Match round=Quarterfinals",
+        "Match round=Round of 128",
+        "Match round=Round of 16",
+        "Match round=Round of 32",
+        "Match round=Round of 64",
+        "Match round=Semifinals"
+    ]
+}

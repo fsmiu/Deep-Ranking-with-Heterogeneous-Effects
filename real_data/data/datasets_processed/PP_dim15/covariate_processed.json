@@ -1,0 +1,19 @@
+{
+    "covariate_processed": [
+        "player1_Profile_Plays=Left-handed",
+        "player1_Profile_Plays=Right-handed",
+        "player1_Home_Advantage=0",
+        "player1_Home_Advantage=1",
+        "player1_conditions=A",
+        "player1_conditions=LL",
+        "player1_conditions=Q",
+        "player1_conditions=WC",
+        "player1_conditions=null",
+        "player1_is_seed",
+        "player1_seed_rank",
+        "player1_recent_match_num_short",
+        "player1_Profile_Height",
+        "player1_current_age",
+        "history_player1_winrate_short"
+    ]
+}

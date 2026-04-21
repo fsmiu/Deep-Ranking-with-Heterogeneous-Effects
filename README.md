@@ -1,34 +1,66 @@
-# Reproducibility workflow for Simulation and ATP Tennis Match Prediction
+# Deep Ranking with Heterogeneous Effects
 
-Source code for simulation and predicting ATP tennis match outcomes.
+This repository contains the implementation and reproducibility workflow for the paper
+[Deep Ranking with Heterogeneous Effect](https://arxiv.org/abs/2604.16129).
+
+1. Source code for simulation and predicting ATP tennis match outcomes.
+2. The collected dataset is stored in `real_data/data/datasets_processed/` and contains ATP tennis data (ATP 250, 500, 1000, Finals, and Grand Slams) between 2016 and 2025.
 
 All commands below assume you start from the repository root.
 
+## Repository Structure
+
+```text
+.
+├── simulation/                  # Simulation experiments
+│   ├── generator.py             # Ranking data generator with heterogeneous covariate effects
+│   ├── algorithm.py             # Classical PL and PlusDC algorithm
+│   ├── deep_algorithm.py        # Deep ranking estimation routines
+│   ├── simulation.py            # Training process
+│   ├── Figure_3.py              # Simulation visualization script
+│   └── run.sh                   # Full simulation script
+├── real_data/                   # ATP tennis match prediction experiments
+│   ├── main_train_realdata.py   # Model training for ATP data
+│   ├── main_optimal_metrics.py  # Metric aggregation and model selection summaries
+│   ├── fig6_radar_plot_enhanced.py
+│   ├── fig7_visualize_single_model.py
+│   ├── run_train.sh             # Training batch script
+│   ├── run_full_experiment.sh   # End-to-end real-data workflow
+│   ├── packages/                # algorithms for real-data experiments
+│   └── data/                    # Processed ATP feature datasets
+├── requirements.txt
+└── README.md
+```
+
 ## Part 1: Environment Setup
+
+The experiments were developed with Python 3.9. Create a clean environment and
+install the dependencies from the repository root:
 
 ```bash
 conda create -n deeprank python=3.9
+conda activate deeprank
 pip install -r requirements.txt
 ```
 
-
 ## Part 2: Full Experiment Pipeline for simulation
-To run the complete experiment workflow:
+
+To run the full workflow:
 
 ```bash
 cd simulation
 bash run.sh
 ```
 
-
 ## Part 3: Full Experiment Pipeline for ATP Tennis Match Prediction
 
-To run the complete experiment workflow:
+To run the full workflow:
 
 ```bash
 cd real_data
 bash run_full_experiment.sh
 ```
+
 
 ## Part 4: ATP Tennis Match Prediction Example Commands
 
@@ -111,3 +143,17 @@ python fig7_visualize_single_model.py --feature_name MI_PP_TS_dim66 --model_type
 Generates trajectories plots and radar charts
 
 ---
+
+
+## Citation
+
+If you use this code, please cite the corresponding paper:
+
+```bibtex
+@article{luo2026deep,
+  title={Deep Ranking with Heterogeneous Effect},
+  author={Luo, Yuanhang and Fang, Shuxing and Han, Ruijian and Xu, Yiming},
+  journal={arXiv preprint arXiv:2604.16129},
+  year={2026}
+}
+```
