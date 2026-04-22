@@ -14,7 +14,7 @@ All commands below assume you start from the repository root.
 .
 ├── simulation/                  # Simulation experiments
 │   ├── generator.py             # Ranking data generator with heterogeneous covariate effects
-│   ├── algorithm.py             # Classical PL and PlusDC algorithm
+│   ├── algorithm.py             # PL and PlusDC algorithm
 │   ├── deep_algorithm.py        # Deep ranking estimation routines
 │   ├── simulation.py            # Training process
 │   ├── Figure_3.py              # Simulation visualization script
