@@ -24,10 +24,10 @@ All commands below assume you start from the repository root.
 │   ├── main_optimal_metrics.py  # Metric aggregation and model selection summaries
 │   ├── fig6_radar_plot_enhanced.py
 │   ├── fig7_visualize_single_model.py
-│   ├── run_train.sh             # Training batch script
+│   ├── run_train.sh             # Training script
 │   ├── run_full_experiment.sh   # End-to-end real-data workflow
-│   ├── packages/                # algorithms for real-data experiments
-│   └── data/                    # Processed ATP feature datasets
+│   ├── packages/                # Algorithms for real-data experiments
+│   └── data/                    # Processed ATP datasets
 ├── requirements.txt
 └── README.md
 ```
